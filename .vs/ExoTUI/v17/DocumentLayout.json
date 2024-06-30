@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\boual\\source\\repos\\ExoTUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C70C5FE-2CA6-4BB8-AD4B-E0EE4619A9D9}|ExoTUI\\ExoTUI.csproj|c:\\users\\boual\\source\\repos\\exotui\\exotui\\pages\\tachesfolder\\addtache.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C70C5FE-2CA6-4BB8-AD4B-E0EE4619A9D9}|ExoTUI\\ExoTUI.csproj|solutionrelative:exotui\\pages\\tachesfolder\\addtache.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C70C5FE-2CA6-4BB8-AD4B-E0EE4619A9D9}|ExoTUI\\ExoTUI.csproj|c:\\users\\boual\\source\\repos\\exotui\\exotui\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C70C5FE-2CA6-4BB8-AD4B-E0EE4619A9D9}|ExoTUI\\ExoTUI.csproj|solutionrelative:exotui\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C70C5FE-2CA6-4BB8-AD4B-E0EE4619A9D9}|ExoTUI\\ExoTUI.csproj|c:\\users\\boual\\source\\repos\\exotui\\exotui\\pages\\tachesfolder\\tachelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C70C5FE-2CA6-4BB8-AD4B-E0EE4619A9D9}|ExoTUI\\ExoTUI.csproj|solutionrelative:exotui\\pages\\tachesfolder\\tachelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddTache.razor",
+              "DocumentMoniker": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\Pages\\TachesFolder\\AddTache.razor",
+              "RelativeDocumentMoniker": "ExoTUI\\Pages\\TachesFolder\\AddTache.razor",
+              "ToolTip": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\Pages\\TachesFolder\\AddTache.razor",
+              "RelativeToolTip": "ExoTUI\\Pages\\TachesFolder\\AddTache.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T12:52:58.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tache.cs",
+              "DocumentMoniker": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\Models\\Tache.cs",
+              "RelativeDocumentMoniker": "ExoTUI\\Models\\Tache.cs",
+              "ToolTip": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\Models\\Tache.cs",
+              "RelativeToolTip": "ExoTUI\\Models\\Tache.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T16:07:12.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TacheList.razor",
+              "DocumentMoniker": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\Pages\\TachesFolder\\TacheList.razor",
+              "RelativeDocumentMoniker": "ExoTUI\\Pages\\TachesFolder\\TacheList.razor",
+              "ToolTip": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\Pages\\TachesFolder\\TacheList.razor",
+              "RelativeToolTip": "ExoTUI\\Pages\\TachesFolder\\TacheList.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T16:06:55.027Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\obj\\Debug\\net8.0\\compressed\\p279h6poya.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ExoTUI.styles.css",
+      "PackagePath": "staticwebassets\\ExoTUI.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\boual\\source\\repos\\ExoTUI\\ExoTUI\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ExoTUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ExoTUI.props",
+      "PackagePath": "build\\ExoTUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ExoTUI.props",
+      "PackagePath": "buildMultiTargeting\\ExoTUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ExoTUI.props",
+      "PackagePath": "buildTransitive\\ExoTUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

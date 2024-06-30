@@ -1,0 +1,104 @@
+﻿@page "/edittache/{Id:int}"
+
+@using ExoTUI.Models
+@using System.Text.Json
+@using ExoTUI.Pages.Modal
+
+@inject IHttpClientFactory _factory
+@inject NavigationManager NavigationManager
+
+<h3>EditTache</h3>
+
+@if (tache != null)
+{
+
+    <EditForm Model="@tache" OnSubmit="Submit">
+        <div>
+            <label>Id</label>
+            <label>@tache.Id</label>
+        </div>
+
+        <div>
+            <label>Date de Creation</label>
+            <label>@tache.Creation.Day/@tache.Creation.Month/@tache.Creation.Year : @tache.Creation.Hour : @tache.Creation.Minute</label>
+        </div>
+        <div>
+            <label>Titre</label>
+            <InputText type="text" @bind-Value="tache.Titre" />
+        </div>
+
+        <div>
+            <label>Terminer : laisser vide si pas de valeur</label>
+            <InputCheckbox @bind-Value="tache.Terminer" />
+        </div>
+
+        <button type="submit">Submit</button>
+    </EditForm>
+
+<button type="submit" @onclick="OpenConfirmDialog">Delete</button>
+
+    <ConfirmDialog Show="ShowConfirmDialog" OnCancel="Cancel" OnOk="Delete" />
+}
+else
+{
+
+    <p>Loading...</p>
+}
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    public Tache tache { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        HttpClient httpClient = _factory.CreateClient("api");
+
+        HttpResponseMessage responseMessage = await httpClient.GetAsync($"/api/Tache/Id?Id={Id}");
+        responseMessage.EnsureSuccessStatusCode();
+
+        string json = await responseMessage.Content.ReadAsStringAsync();
+        tache = JsonSerializer.Deserialize<Tache>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+    }
+
+
+
+
+    protected async Task Submit()
+    {
+        HttpClient httpClient = _factory.CreateClient("api");
+
+        TacheUpdate tacheUpdated = new()
+        {
+        Titre = tache.Titre,
+        Terminer = tache.Terminer
+            
+        }; 
+
+        HttpContent content = JsonContent.Create(tacheUpdated);
+        HttpResponseMessage responseMessage = await httpClient.PutAsync($"/api/Tache/Update?Id={Id}", content);
+
+        NavigationManager.NavigateTo("tachelist");
+    }
+
+    private bool ShowConfirmDialog;
+
+    private void OpenConfirmDialog()
+    {
+        ShowConfirmDialog = true;
+    }
+
+    private void Cancel()
+    {
+        ShowConfirmDialog = false;
+    }
+
+    private async Task Delete()
+    {
+        HttpClient httpClient = _factory.CreateClient("api");
+        HttpResponseMessage responseMessage = await httpClient.DeleteAsync($"/api/Tache/Delete?Id={Id}");
+
+        NavigationManager.NavigateTo("tachelist");
+    }
+}

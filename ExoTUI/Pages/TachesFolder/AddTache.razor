@@ -1,0 +1,30 @@
+﻿@page "/addtache"
+@using ExoTUI.Models
+@inject IHttpClientFactory _factory
+@inject NavigationManager NavigationManager
+
+<h3>AddTache</h3>
+
+<form @onsubmit="Submit">
+
+    <div>
+        <label>Titre</label>
+        <InputText @bind-Value="tache.Titre"/>
+    </div>
+    
+    <button type="submit">Submit</button>
+</form>
+
+@code {
+    public TacheCreation tache { get; set; } = new();
+
+
+    protected async Task Submit()
+    {
+        HttpClient httpClient = _factory.CreateClient("api");
+        HttpContent content = JsonContent.Create(tache);
+        HttpResponseMessage responseMessage = await httpClient.PostAsync("/api/Tache", content);
+
+        NavigationManager.NavigateTo("tachelist");
+    }
+}

@@ -1,0 +1,58 @@
+﻿@page "/tachelist"
+@using ExoTUI.Models
+@using System.Text.Json
+
+@inject IHttpClientFactory _factory;
+
+<h3>TacheList</h3>
+
+@if (taches is null)
+{
+    <h5>Loading...</h5>
+}
+else
+{
+    <a class="btn btn-primary" href="addtache">Add Tache</a>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Titre</th>
+                    <th>date de Creation</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Tache tache in taches)
+                {
+                    <tr>
+                        <td>@tache.Id</td>
+                        <td>@tache.Titre</td>
+                        <td>@tache.Creation</td>
+                        <td>@tache.Terminer</td>
+                        <td>
+                            <a class="btn btn-primary" href="edittache/@tache.Id">Edit</a>                        
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    private Tache[] taches;
+
+    protected override async Task OnInitializedAsync()
+    {
+        HttpClient httpClient = _factory.CreateClient("api");
+        HttpResponseMessage responseMessage = await httpClient.GetAsync("/api/Tache");
+
+        responseMessage.EnsureSuccessStatusCode();
+
+        string json = await responseMessage.Content.ReadAsStringAsync();
+
+        taches = JsonSerializer.Deserialize<Tache[]>(json, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+    }
+}
